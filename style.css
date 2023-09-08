@@ -1,0 +1,197 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+  background-color: #43a047;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+#froggy {
+  font-family: 'Fredoka One', cursive;
+  text-transform: uppercase;
+}
+
+h1,
+h2, 
+.subtitle {
+  text-align: center;
+}
+
+
+.contenedor-ejercicios {
+  /* display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  justify-items: center; */
+  
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.lago {
+  margin: 1px 25px;
+  display: grid;
+  grid-template: 1fr / 1fr;
+  width: 200px;
+  height: 200px;
+  background-color: #1f5768;
+}
+
+.contenedor.hojas, .contenedor.ranas {
+  grid-area: 1 / 1 / 2 / 2;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  min-height: 0; /* Avoids overflow. To understand why, look at: https://github.com/w3c/csswg-drafts/issues/6260 */
+}
+
+.hoja {
+  margin: 2.5%;
+  width: 15%;
+  height: 15%;
+  border-radius: 50%;
+  background-color: black;
+}
+
+.hoja.verde {
+  background-color: #288a2b;
+}
+.hoja.amarilla {
+  background-color: #c4c403;
+}
+.hoja.roja {
+  background-color: #cf1a17;
+}
+
+.rana {
+  margin: 5%;
+  width: 10%;
+  height: 10%;
+  border-radius: 30%;
+}
+
+.rana.verde {
+  background-color: #77f87a;
+}
+.rana.amarilla {
+  background-color: #ffff95;
+}
+.rana.roja {
+  background-color: #fb9290;
+}
+
+#nivel-1 .contenedor {
+  justify-content: flex-end;
+}
+
+#nivel-2 .contenedor {
+  justify-content: center;
+}
+
+#nivel-3 .contenedor {
+  justify-content: space-around;
+}
+
+#nivel-4 .contenedor {
+  justify-content: flex-end;
+}
+
+#nivel-5 .contenedor {
+  align-items: flex-end;
+}
+
+#nivel-6 .contenedor {
+  justify-content: center;
+  align-items: center;
+}
+
+#nivel-7 .contenedor {
+  justify-content: space-around;
+  align-items: flex-end;
+}
+
+#nivel-8 .contenedor {
+  flex-direction: row-reverse;
+}
+
+#nivel-9 .contenedor {
+  flex-direction: column;
+}
+
+#nivel-10 .contenedor {
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+}
+
+#nivel-11 .contenedor {
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+#nivel-12 .contenedor {
+  flex-direction: column-reverse;
+  justify-content: space-between;
+}
+#nivel-13 .contenedor {
+  flex-direction: row-reverse;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+#nivel-14 .amarilla {
+  order: 1;
+}
+
+#nivel-15 .roja {
+  order: -1;
+}
+
+#nivel-16 .amarilla {
+  align-self: flex-end;
+}
+
+#nivel-17 .amarilla {
+  order: 1;
+  align-self: flex-end;
+}
+
+#nivel-18 .contenedor {
+  flex-wrap: wrap;
+}
+
+#nivel-19 .contenedor {
+  flex-direction: column;
+  flex-wrap: wrap;  
+}
+
+#nivel-20 .contenedor {
+  flex-flow: column wrap;
+}
+
+#nivel-21 .contenedor {
+  flex-wrap: wrap;
+  align-content: flex-start;
+}
+
+#nivel-22 .contenedor {
+  flex-wrap: wrap;
+  align-content: flex-end;
+}
+
+#nivel-23 .contenedor {
+  flex-wrap: wrap;
+  flex-direction: column-reverse;
+  align-content: center;
+}
+
+#nivel-24 .contenedor {
+  flex-flow: column-reverse wrap-reverse;
+  justify-content: center;
+  align-content: space-between;
+}
